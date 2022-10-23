@@ -1,10 +1,11 @@
-#include "include/webcam.hpp"
+#include "webcam.hpp"
 
 #include <iostream>
 #include <stdio.h>
 
 int main()
 {
+	Webcam Webcam;
 	cv::VideoCapture webcam(0);
 
 	if(webcam.isOpened() == false)
