@@ -26,7 +26,6 @@ elif [ "$1" == "-h"  ] || [ "$1" == "--help" ];  then
    echo "--gen:                 Generate make files with CMakeLists.txt and make."
    echo "--make:                Run make in 'build' to build binaries."
    echo "--run <binary_name>:   Runs the respective <binary_name> in 'build'."
-
 else
   echo "option" "$1" "is invalid."
 fi
