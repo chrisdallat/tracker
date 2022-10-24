@@ -1,8 +1,5 @@
 #include "webcam.hpp"
 
-#include <iostream>
-#include <stdio.h>
-
 int main()
 {
 	Webcam webcam;
