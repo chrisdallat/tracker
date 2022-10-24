@@ -143,6 +143,7 @@ void Webcam::set_tracking_box()
 		show_video_outputs();        
         wait(10, 32);
 	}
+
 	while(m_tracking_box.empty()) //required while or any key other than SPACE/ENTER crashes
 	{
 		m_tracking_box = cv::selectROI("Main Image", m_mat_original, false);
@@ -178,7 +179,7 @@ void Webcam::wait(int timer, int key)
         m_valid = false;
         std::cout << "ESC key pressed, closing app!" << std::endl;
     }
-	if (key == ' ' && key == key_pressed)
+	if (key_pressed == ' ' && key == key_pressed)
     { 
         m_spacebar_pressed = true;
         std::cout << "SPACE pressed, snapshot for tracking box selection!" << std::endl;
