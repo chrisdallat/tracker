@@ -154,7 +154,7 @@ void Webcam::main_loop()
 	create_windows();
 	set_tracking_box();
 	m_tracker->init(m_mat_original, m_tracking_box);
-	std::cout << "here2" << std::endl;
+
     while(valid() == true)
     {
         capture();
